@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">In This Environment, As That Speaker: A Text-Driven Framework for
+              Multi-Attribute Speech Conversion</h1>
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span>
+                  </div> -->
+
+                  <!-- <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div> -->
+
+                  <!-- <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose TES-VC (Text-driven Environment and Speaker controllable Voice Conversion), a text-driven voice conversion framework with independent control of speaker timbre and environmental acoustics. TES-VC processes simultaneous text 
+            inputs for target voice and environment, accurately generating speech matching described timbre/environment while preserving source content. Trained on synthetic data with de- 
+            coupled vocal/environment features via latent diffusion modeling, our method eliminates interference between attributes. The Retrieval-Based Timbre Control (RBTC) module enables 
+            precise manipulation using abstract descriptions without paired data. Experiments confirm TES-VC effectively generates contextually appropriate speech in both timbre and environment with high content retention and superior controllability 
+            which demonstrates its potential for widespread applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop is-centered has-text-centered">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Model Overview</h2>
+          <img src="./static/images/model_overview.png"
+                    class="interpolation-image"
+                    alt="Interpolate start reference image."/>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="columns is-centered has-text-centered">
+  <h2 class="title is-3">Voice conversion with environmental and speaker control</h2>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th style="text-align: center;"><strong>Enviroment and speaker description</strong></th>
+      <th style="text-align: center;"><strong>Only CLAP</strong></th>
+      <th style="text-align: center;"><strong>VoiceLDM</strong></th>
+      <th style="text-align: center;"><strong>TES-VC(ours)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- 第一行, 使用2.wav，不变 -->
+    <tr>
+      <td width="25%">
+        <p>
+          <b>
+            Enviroment: Birds are squawking, and ducks are quacking<br>
+            Speaker: An old man is speaking in a deep voice
+          </b>
+        </p>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_onlyclap/2.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_voiceLDM/2.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_proposed/2.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+    <!-- 第二行, 改为3.wav -->
+    <tr>
+      <td width="25%">
+        <p>
+          <b>
+            Enviroment: Repeated gunfire and screaming in the background<br>
+            Speaker: An old man is speaking in a gentle voice
+          </b>
+        </p>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_onlyclap/3.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_voiceLDM/3.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_proposed/3.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+    <!-- 第三行, 改为4.wav -->
+    <tr>
+      <td width="25%">
+        <p>
+          <b>
+            Enviroment: Motorcycle starting then driving away<br>
+            Speaker: A young man is speaking in a clear voice
+          </b>
+        </p>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_onlyclap/4.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_voiceLDM/4.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_proposed/4.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+    <!-- 第四行, 改为5.wav -->
+    <tr>
+      <td width="25%">
+        <p>
+          <b>
+            Enviroment: Food is frying, and a woman talks <br>
+            Speaker: An elderly woman is speaking
+          </b>
+        </p>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_onlyclap/5.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_voiceLDM/5.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_proposed/5.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+    <!-- 第五行, 改为6.wav -->
+    <tr>
+      <td width="25%">
+        <p>
+          <b>
+            Enviroment: Church bells ringing <br>
+            Speaker: A woman is speaking in a gentle voice
+          </b>
+        </p>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_onlyclap/6.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_voiceLDM/6.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_proposed/6.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+    <!-- 第六行, 改为7.wav -->
+    <tr>
+      <td width="25%">
+        <p>
+          <b>
+            Enviroment: Water is falling, splashing and gurgling <br>
+            Speaker: A young girl is speaking in a sweet  and light voice
+          </b>
+        </p>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_onlyclap/7.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_voiceLDM/7.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_proposed/7.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+    <!-- 第七行, 改为8.wav -->
+    <tr>
+      <td width="25%">
+        <p>
+          <b>
+            Enviroment: A crowd applauds for a while <br>
+            Speaker: A woman is speaking in a rough and deep voice
+          </b>
+        </p>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_onlyclap/8.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_voiceLDM/8.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_proposed/8.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+    <!-- 第八行, 改为9.wav -->
+    <tr>
+      <td width="25%">
+        <p>
+          <b>
+            Enviroment: A piano playing as a clock ticks <br>
+            Speaker: A man is speaking in a hoarse voice
+          </b>
+        </p>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_onlyclap/9.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_voiceLDM/9.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_proposed/9.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+    <!-- 第九行, 改为10.wav -->
+    <tr>
+      <td width="25%">
+        <p>
+          <b>
+            Enviroment: Nature sounds with birds chirping and singing <br>
+            Speaker: A young woman is speaking in soft voice
+          </b>
+        </p>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_onlyclap/10.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_voiceLDM/10.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td width="25%" style="text-align: center;">
+        <audio controls>
+          <source src="static/wavs/output_mos_proposed/10.wav" type="audio/wav">
+        </audio>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop is-centered has-text-centered">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Subjective evaluation</h2>
+          <img src="./static/images/experiment_table.png"
+               class="interpolation-image"
+               alt="Interpolate start reference image."
+               style="width: 150%; max-width: 1800px; position: relative; left: 50%; transform: translateX(-50%);" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
