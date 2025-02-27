@@ -9,8 +9,7 @@
 
 # GitHub Pages
 
-_In This Environment, As That Speaker: A Text-Driven Framework for Multi-Attribute Speech Conversion_
-https://tes-vc.github.io/TES-VC-demo-page/
+_Create a site or blog from your GitHub repositories with GitHub Pages._
 
 </header>
 
