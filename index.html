@@ -164,343 +164,363 @@
   </div>
 </div>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th style="text-align: center; width:20%;"><strong>Original</strong></th>
-      <th style="text-align: center; width:20%;"><strong>Enviroment and speaker description</strong></th>
-      <th style="text-align: center; width:10%;"><strong>VoiceLDM</strong></th>
-      <th style="text-align: center; width:10%;"><strong>w/o CLAP-timbre adapter</strong></th>
-      <th style="text-align: center; width:10%;"><strong>TES-VC(ours)</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <!-- 第一行, 使用2.wav -->
-    <tr>
-      <td style="text-align: center; width:20%;">
-        <div class="column">
+<div style="margin: 0 50px;">  <!-- 调整左右 margin 的数值 -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="text-align: center; width:20%;"><strong>Original</strong></th>
+        <th style="text-align: center; width:30%;"><strong>Enviroment and speaker description</strong></th>
+        <th style="text-align: center; width:10%;"><strong>VoiceLDM</strong></th>
+        <th style="text-align: center; width:10%;"><strong>w/o CLAP-timbre adapter</strong></th>
+        <th style="text-align: center; width:10%;"><strong>TES-VC(ours)</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 第一行, 使用2.wav -->
+      <tr>
+        <td style="text-align: center; width:20%;">
+          <div class="column">
+            <audio controls>
+              <source src="static/wavs/original/2.wav" type="audio/wav">
+            </audio>
+            <p>
+              <b>
+                Content text: He might have had that forged check for the face of it, if he'd been sharp. You wouldn't catch 'Rast Hopkins doing such a fool stunt.
+              </b>
+            </p>
+          </div>
+        </td>
+        <td style="width:30%;">
+          <p>
+            <b>
+              Enviroment: Birds are squawking, and ducks are quacking<br>
+              Speaker: An old man is speaking in a deep voice
+            </b>
+          </p>
+        </td>
+        <td style="text-align: center; width:10%;">
           <audio controls>
-            <source src="static/wavs/original/2.wav" type="audio/wav">
+            <source src="static/wavs/output_mos_voiceLDM/2.wav" type="audio/wav">
           </audio>
-          <b>
-            Content text: He might have had that forged check for the face of it, if he'd been sharp. You wouldn't catch 'Rast Hopkins doing such a fool stunt.
-          </b>
-        </div>
-      </td>
-      <td style="width:20%;">
-        <p>
-          <b>
-            Enviroment: Birds are squawking, and ducks are quacking<br>
-            Speaker: An old man is speaking in a deep voice
-          </b>
-        </p>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_voiceLDM/2.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_onlyclap/2.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_proposed/2.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <!-- 第二行, 使用3.wav -->
-    <tr>
-      <td style="text-align: center; width:20%;">
-        <div class="column">
+        </td>
+        <td style="text-align: center; width:10%;">
           <audio controls>
-            <source src="static/wavs/original/3.wav" type="audio/wav">
+            <source src="static/wavs/output_mos_onlyclap/2.wav" type="audio/wav">
           </audio>
-          <b>
-            Content text: He might have had that forged check for the face of it, if he'd been sharp.
-          </b>
-        </div>
-      </td>
-      <td style="width:20%;">
-        <p>
-          <b>
-            Enviroment: Repeated gunfire and screaming in the background<br>
-            Speaker: An old man is speaking in a gentle voice
-          </b>
-        </p>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_voiceLDM/3.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_onlyclap/3.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_proposed/3.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <!-- 第三行, 使用4.wav -->
-    <tr>
-      <td style="text-align: center; width:20%;">
-        <div class="column">
+        </td>
+        <td style="text-align: center; width:10%;">
           <audio controls>
-            <source src="static/wavs/original/4.wav" type="audio/wav">
+            <source src="static/wavs/output_mos_proposed/2.wav" type="audio/wav">
           </audio>
-          <b>
-            Content text: "We say, of course," somebody exclaimed, "that they give two turns!
-          </b>
-        </div>
-      </td>
-      <td style="width:20%;">
-        <p>
-          <b>
-            Enviroment: Motorcycle starting then driving away<br>
-            Speaker: A young man is speaking in a clear voice
-          </b>
-        </p>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_voiceLDM/4.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_onlyclap/4.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_proposed/4.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <!-- 第四行, 使用5.wav -->
-    <tr>
-      <td style="text-align: center; width:20%;">
-        <div class="column">
+        </td>
+      </tr>
+      <!-- 第二行, 使用3.wav -->
+      <tr>
+        <td style="text-align: center; width:20%;">
+          <div class="column">
+            <audio controls>
+              <source src="static/wavs/original/3.wav" type="audio/wav">
+            </audio>
+            <p>
+              <b>
+                Content text: He might have had that forged check for the face of it, if he'd been sharp.
+              </b>
+            </p>
+          </div>
+        </td>
+        <td style="width:30%;">
+          <p>
+            <b>
+              Enviroment: Repeated gunfire and screaming in the background<br>
+              Speaker: An old man is speaking in a gentle voice
+            </b>
+          </p>
+        </td>
+        <td style="text-align: center; width:10%;">
           <audio controls>
-            <source src="static/wavs/original/5.wav" type="audio/wav">
+            <source src="static/wavs/output_mos_voiceLDM/3.wav" type="audio/wav">
           </audio>
-          <b>
-            Content text: There was good reason to stop and think, even for the world's most emotionless man. What would Conseil say?
-          </b>
-        </div>
-      </td>
-      <td style="width:20%;">
-        <p>
-          <b>
-            Enviroment: Food is frying, and a woman talks<br>
-            Speaker: An elderly woman is speaking
-          </b>
-        </p>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_voiceLDM/5.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_onlyclap/5.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_proposed/5.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <!-- 第五行, 使用6.wav -->
-    <tr>
-      <td style="text-align: center; width:20%;">
-        <div class="column">
+        </td>
+        <td style="text-align: center; width:10%;">
           <audio controls>
-            <source src="static/wavs/original/6.wav" type="audio/wav">
+            <source src="static/wavs/output_mos_onlyclap/3.wav" type="audio/wav">
           </audio>
-          <b>
-            Content text: The salient features of this development of domestic service have already been indicated.
-          </b>
-        </div>
-      </td>
-      <td style="width:20%;">
-        <p>
-          <b>
-            Enviroment: Church bells ringing<br>
-            Speaker: A woman is speaking in a gentle voice
-          </b>
-        </p>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_voiceLDM/6.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_onlyclap/6.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_proposed/6.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <!-- 第六行, 使用7.wav -->
-    <tr>
-      <td style="text-align: center; width:20%;">
-        <div class="column">
+        </td>
+        <td style="text-align: center; width:10%;">
           <audio controls>
-            <source src="static/wavs/original/7.wav" type="audio/wav">
+            <source src="static/wavs/output_mos_proposed/3.wav" type="audio/wav">
           </audio>
-          <b>
-            Content text: A suffocating smell of nitrogen fills the air, it enters the throat, it fills the lungs.
-          </b>
-        </div>
-      </td>
-      <td style="width:20%;">
-        <p>
-          <b>
-            Enviroment: Water is falling, splashing and gurgling<br>
-            Speaker: A young girl is speaking in a sweet and light voice
-          </b>
-        </p>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_voiceLDM/7.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_onlyclap/7.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_proposed/7.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <!-- 第七行, 使用8.wav -->
-    <tr>
-      <td style="text-align: center; width:20%;">
-        <div class="column">
+        </td>
+      </tr>
+      <!-- 第三行, 使用4.wav -->
+      <tr>
+        <td style="text-align: center; width:20%;">
+          <div class="column">
+            <audio controls>
+              <source src="static/wavs/original/4.wav" type="audio/wav">
+            </audio>
+            <p>
+              <b>
+                Content text: "We say, of course," somebody exclaimed, "that they give two turns!
+              </b>
+            </p>
+          </div>
+        </td>
+        <td style="width:30%;">
+          <p>
+            <b>
+              Enviroment: Motorcycle starting then driving away<br>
+              Speaker: A young man is speaking in a clear voice
+            </b>
+          </p>
+        </td>
+        <td style="text-align: center; width:10%;">
           <audio controls>
-            <source src="static/wavs/original/8.wav" type="audio/wav">
+            <source src="static/wavs/output_mos_voiceLDM/4.wav" type="audio/wav">
           </audio>
-          <b>
-            Content text: 'I'm glad you like it,' says Wylder, chuckling benignantly on it, over his shoulder.
-          </b>
-        </div>
-      </td>
-      <td style="width:20%;">
-        <p>
-          <b>
-            Enviroment: A crowd applauds for a while<br>
-            Speaker: A woman is speaking in a rough and deep voice
-          </b>
-        </p>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_voiceLDM/8.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_onlyclap/8.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_proposed/8.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <!-- 第八行, 使用9.wav -->
-    <tr>
-      <td style="text-align: center; width:20%;">
-        <div class="column">
+        </td>
+        <td style="text-align: center; width:10%;">
           <audio controls>
-            <source src="static/wavs/original/9.wav" type="audio/wav">
+            <source src="static/wavs/output_mos_onlyclap/4.wav" type="audio/wav">
           </audio>
-          <b>
-            Content text: He turned seaward from the road at Dollymount and as he passed on to the thin wooden bridge he felt the planks shaking with the tramp of heavily shod feet.
-          </b>
-        </div>
-      </td>
-      <td style="width:20%;">
-        <p>
-          <b>
-            Enviroment: A piano playing as a clock ticks<br>
-            Speaker: A man is speaking in a hoarse voice
-          </b>
-        </p>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_voiceLDM/9.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_onlyclap/9.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_proposed/9.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-    <!-- 第九行, 使用10.wav -->
-    <tr>
-      <td style="text-align: center; width:20%;">
-        <div class="column">
+        </td>
+        <td style="text-align: center; width:10%;">
           <audio controls>
-            <source src="static/wavs/original/10.wav" type="audio/wav">
+            <source src="static/wavs/output_mos_proposed/4.wav" type="audio/wav">
           </audio>
-          <b>
-            Content text: The pleasant graveyard of my soul with sentimental cypress trees and flowers is filled, that I may stroll in meditation, at my ease.
-          </b>
-        </div>
-      </td>
-      <td style="width:20%;">
-        <p>
-          <b>
-            Enviroment: Nature sounds with birds chirping and singing<br>
-            Speaker: A young woman is speaking in soft voice
-          </b>
-        </p>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_voiceLDM/10.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_onlyclap/10.wav" type="audio/wav">
-        </audio>
-      </td>
-      <td style="text-align: center; width:10%;">
-        <audio controls>
-          <source src="static/wavs/output_mos_proposed/10.wav" type="audio/wav">
-        </audio>
-      </td>
-    </tr>
-  </tbody>
-</table>
+        </td>
+      </tr>
+      <!-- 第四行, 使用5.wav -->
+      <tr>
+        <td style="text-align: center; width:20%;">
+          <div class="column">
+            <audio controls>
+              <source src="static/wavs/original/5.wav" type="audio/wav">
+            </audio>
+            <p>
+              <b>
+                Content text: There was good reason to stop and think, even for the world's most emotionless man. What would Conseil say?
+              </b>
+            </p>
+          </div>
+        </td>
+        <td style="width:30%;">
+          <p>
+            <b>
+              Enviroment: Food is frying, and a woman talks<br>
+              Speaker: An elderly woman is speaking
+            </b>
+          </p>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_voiceLDM/5.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_onlyclap/5.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_proposed/5.wav" type="audio/wav">
+          </audio>
+        </td>
+      </tr>
+      <!-- 第五行, 使用6.wav -->
+      <tr>
+        <td style="text-align: center; width:20%;">
+          <div class="column">
+            <audio controls>
+              <source src="static/wavs/original/6.wav" type="audio/wav">
+            </audio>
+            <p>
+              <b>
+                Content text: The salient features of this development of domestic service have already been indicated.
+              </b>
+            </p>
+          </div>
+        </td>
+        <td style="width:30%;">
+          <p>
+            <b>
+              Enviroment: Church bells ringing<br>
+              Speaker: A woman is speaking in a gentle voice
+            </b>
+          </p>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_voiceLDM/6.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_onlyclap/6.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_proposed/6.wav" type="audio/wav">
+          </audio>
+        </td>
+      </tr>
+      <!-- 第六行, 使用7.wav -->
+      <tr>
+        <td style="text-align: center; width:20%;">
+          <div class="column">
+            <audio controls>
+              <source src="static/wavs/original/7.wav" type="audio/wav">
+            </audio>
+            <p>
+              <b>
+                Content text: A suffocating smell of nitrogen fills the air, it enters the throat, it fills the lungs.
+              </b>
+            </p>
+          </div>
+        </td>
+        <td style="width:30%;">
+          <p>
+            <b>
+              Enviroment: Water is falling, splashing and gurgling<br>
+              Speaker: A young girl is speaking in a sweet and light voice
+            </b>
+          </p>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_voiceLDM/7.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_onlyclap/7.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_proposed/7.wav" type="audio/wav">
+          </audio>
+        </td>
+      </tr>
+      <!-- 第七行, 使用8.wav -->
+      <tr>
+        <td style="text-align: center; width:20%;">
+          <div class="column">
+            <audio controls>
+              <source src="static/wavs/original/8.wav" type="audio/wav">
+            </audio>
+            <p>
+              <b>
+                Content text: 'I'm glad you like it,' says Wylder, chuckling benignantly on it, over his shoulder.
+              </b>
+            </p>
+          </div>
+        </td>
+        <td style="width:30%;">
+          <p>
+            <b>
+              Enviroment: A crowd applauds for a while<br>
+              Speaker: A woman is speaking in a rough and deep voice
+            </b>
+          </p>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_voiceLDM/8.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_onlyclap/8.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_proposed/8.wav" type="audio/wav">
+          </audio>
+        </td>
+      </tr>
+      <!-- 第八行, 使用9.wav -->
+      <tr>
+        <td style="text-align: center; width:20%;">
+          <div class="column">
+            <audio controls>
+              <source src="static/wavs/original/9.wav" type="audio/wav">
+            </audio>
+            <p>
+              <b>
+                Content text: He turned seaward from the road at Dollymount and as he passed on to the thin wooden bridge he felt the planks shaking with the tramp of heavily shod feet.
+              </b>
+            </p>
+          </div>
+        </td>
+        <td style="width:30%;">
+          <p>
+            <b>
+              Enviroment: A piano playing as a clock ticks<br>
+              Speaker: A man is speaking in a hoarse voice
+            </b>
+          </p>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_voiceLDM/9.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_onlyclap/9.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_proposed/9.wav" type="audio/wav">
+          </audio>
+        </td>
+      </tr>
+      <!-- 第九行, 使用10.wav -->
+      <tr>
+        <td style="text-align: center; width:20%;">
+          <div class="column">
+            <audio controls>
+              <source src="static/wavs/original/10.wav" type="audio/wav">
+            </audio>
+            <p>
+              <b>
+                Content text: The pleasant graveyard of my soul with sentimental cypress trees and flowers is filled, that I may stroll in meditation, at my ease.
+              </b>
+            </p>
+          </div>
+        </td>
+        <td style="width:30%;">
+          <p>
+            <b>
+              Enviroment: Nature sounds with birds chirping and singing<br>
+              Speaker: A young woman is speaking in soft voice
+            </b>
+          </p>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_voiceLDM/10.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_onlyclap/10.wav" type="audio/wav">
+          </audio>
+        </td>
+        <td style="text-align: center; width:10%;">
+          <audio controls>
+            <source src="static/wavs/output_mos_proposed/10.wav" type="audio/wav">
+          </audio>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 
